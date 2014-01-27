@@ -31,7 +31,7 @@ public class Schedule {
         long duration = (long) (event.getDuration() * (1.00 - event.getCompletion()));
 
         // Don't schedule events of 0 duration
-        if(duration > 0)
+        if (duration > 0)
         {
             // Set initial start and end dates
             DateTime startDate = scheduleStartDate;
@@ -72,7 +72,7 @@ public class Schedule {
 
             } while (!eventAdded);
 
-            if(event.getDueDate().getMillis()<event.getEndDate().getMillis())
+            if (event.getDueDate().getMillis() < event.getEndDate().getMillis())
             {
                 overcommited = true;
                 event.setLate();
@@ -109,8 +109,7 @@ public class Schedule {
         return scheduleTree.getOverlapping(new CalendarEvent(startDate, endDate));
     }
 
-    public boolean isOvercommited()
-    {
+    public boolean isOvercommited() {
         return overcommited;
     }
 }

@@ -103,7 +103,7 @@ public class ScheduleFragment extends Fragment {
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         this.menu = menu;
 
-        if(sharedPreferences.getBoolean(getString(R.string.pref_geolocation_enabled), false))
+        if (sharedPreferences.getBoolean(getString(R.string.pref_geolocation_enabled), false))
         {
             enableGeolocation();
         }
@@ -179,13 +179,12 @@ public class ScheduleFragment extends Fragment {
         processSchedule();
     }
 
-    private void processSchedule()
-    {
+    private void processSchedule() {
         boolean geolocationEnabled = sharedPreferences.getBoolean(getString(R.string.pref_geolocation_enabled), false);
 
         ScheduleProcessor processor;
 
-        if(geolocationEnabled)
+        if (geolocationEnabled)
         {
             // Get the location manager
             LocationManager locationManager = (LocationManager) getContext().getSystemService(Context.LOCATION_SERVICE);
@@ -204,7 +203,7 @@ public class ScheduleFragment extends Fragment {
     }
 
     public void setOvercommitment(boolean status) {
-        if(status)
+        if (status)
         {
             ((MainActivity) getActivity()).getAnimatedActionBar().start(0x00DD9A9A);
         }

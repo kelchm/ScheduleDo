@@ -5,7 +5,6 @@ import android.util.Log;
 
 import com.kelchm.scheduledo.adapters.ScheduleListAdapter;
 import com.kelchm.scheduledo.fragments.ScheduleFragment;
-import com.kelchm.scheduledo.models.Location;
 import com.kelchm.scheduledo.models.schedule.ActionEvent;
 import com.kelchm.scheduledo.models.schedule.CalendarEvent;
 import com.kelchm.scheduledo.models.schedule.Schedule;
@@ -30,8 +29,7 @@ public class ScheduleProcessor extends AsyncTask<Object, Integer, List<ScheduleE
     private Schedule schedule;
     private CalendarHelper calendarHelper;
 
-    public ScheduleProcessor(ScheduleFragment scheduleFragment, boolean geolocationEnabled, android.location.Location currentLocation)
-    {
+    public ScheduleProcessor(ScheduleFragment scheduleFragment, boolean geolocationEnabled, android.location.Location currentLocation) {
         this.scheduleFragment = scheduleFragment;
         this.geolocationEnabled = geolocationEnabled;
         this.currentLocation = currentLocation;
@@ -67,17 +65,17 @@ public class ScheduleProcessor extends AsyncTask<Object, Integer, List<ScheduleE
             boolean localProject = true;
 
             // Is geolocation turned on?  Does the project have a location set?
-            if(geolocationEnabled && project.getLocation() != null)
+            if (geolocationEnabled && project.getLocation() != null)
             {
                 float distance = project.getLocation().getLocation().distanceTo(currentLocation);
 
-                if(distance >= 300.0)  //TODO: Make this distance a preference
+                if (distance >= 300.0)  //TODO: Make this distance a preference
                 {
                     localProject = false;
                 }
             }
 
-            if(localProject)
+            if (localProject)
             {
                 for (Action action : project.getActions())
                 {

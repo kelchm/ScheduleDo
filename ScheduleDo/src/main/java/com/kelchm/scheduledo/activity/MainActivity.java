@@ -201,8 +201,7 @@ public class MainActivity extends FragmentActivity {
         }
     }
 
-    public ColorAnimationDrawable getAnimatedActionBar()
-    {
+    public ColorAnimationDrawable getAnimatedActionBar() {
         return animatedActionBar;
     }
 }

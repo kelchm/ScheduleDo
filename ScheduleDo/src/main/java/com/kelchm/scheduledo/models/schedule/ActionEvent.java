@@ -35,8 +35,7 @@ public class ActionEvent extends ScheduleEvent {
         return action.getParentProject().getName();
     }
 
-    public DateTime getDueDate()
-    {
+    public DateTime getDueDate() {
         return action.getParentProject().getDueDate();
     }
 
@@ -44,13 +43,11 @@ public class ActionEvent extends ScheduleEvent {
         return action;
     }
 
-    public void setLate()
-    {
+    public void setLate() {
         isLate = true;
     }
 
-    public boolean isLate()
-    {
+    public boolean isLate() {
         return isLate;
     }
 }

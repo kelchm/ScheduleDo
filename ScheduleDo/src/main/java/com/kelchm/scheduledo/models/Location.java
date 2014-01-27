@@ -59,8 +59,7 @@ public class Location {
         return false;
     }
 
-    public android.location.Location getLocation()
-    {
+    public android.location.Location getLocation() {
         android.location.Location location = new android.location.Location("database");
         location.setLatitude(latitude);
         location.setLongitude(longitude);
