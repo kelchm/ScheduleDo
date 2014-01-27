@@ -1,0 +1,17 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="overcommitment_feedback_checkbox"
+        android:title="@string/pref_title_overcommitment_feedback"
+        android:summary="@string/pref_description_overcommitment_feedback"
+        android:defaultValue="true"/>
+
+    //TODO: This should be a number picker
+    <EditTextPreference
+        android:key="pref_key_sms_delete_limit"
+        android:title="@string/pref_title_minimum_free_time"
+        android:summary="@string/pref_description_minimum_free_time"
+        android:inputType="number"
+        android:defaultValue="100"/>
+
+</PreferenceScreen>

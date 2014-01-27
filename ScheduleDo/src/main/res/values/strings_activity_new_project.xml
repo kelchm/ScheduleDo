@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_activity_new_project">Add Project</string>
+    <string name="action_create_project">Create</string>
+    <string name="hint_project_name">Project</string>
+
+</resources>

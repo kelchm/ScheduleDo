@@ -1,0 +1,15 @@
+<resources>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_overcommitment">Overcommitment Settings</string>
+
+    <string name="pref_title_overcommitment_feedback">Overcommitment Feedback</string>
+    <string name="pref_description_overcommitment_feedback">Changes actionbar color to signal changing overcommitment state</string>
+
+    <string name="pref_title_minimum_free_time">Minimum Free Time</string>
+    <string name="pref_description_minimum_free_time">The free minumum time required in order to not be overcommited</string>
+
+</resources>

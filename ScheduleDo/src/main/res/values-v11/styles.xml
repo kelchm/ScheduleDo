@@ -1,0 +1,51 @@
+<resources>
+
+    <!--
+        Base application theme for API 11+. This theme completely replaces
+        AppBaseTheme from res/values/styles.xml on API 11+ devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!-- API 11 theme customizations can go here. -->
+    </style>
+
+    <style name="ListItem">ListItem</style>
+
+    <style name="ListItem.Header">
+        <item name="android:background">#ffdfdfdf</item>
+    </style>
+
+    <style name="ListItem.Header.Text">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ff444444</item>
+    </style>
+
+    <style name="ListItem.Title" parent="@android:style/TextAppearance.Large">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+
+    <style name="ListItem.Title.Small" parent="ListItem.Title">
+        <item name="android:textSize">15dp</item>
+
+    </style>
+
+    <style name="TextView.Header" parent="@android:style/TextAppearance.Large">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="ListItem.Count">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">#ffbfbfbf</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="ListItem.Icon"></style>
+
+    <style name="ListItem.Icon.Small">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#0099CC</item>
+    </style>
+
+</resources>

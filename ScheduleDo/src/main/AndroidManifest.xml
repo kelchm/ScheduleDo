@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.kelchm.scheduledo"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.kelchm.scheduledo.activity.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- A child of the main activity -->
+        <activity
+            android:name="com.kelchm.scheduledo.activity.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="com.kelchm.scheduledo.activity.MainActivity"/>
+        <activity
+            android:name="com.kelchm.scheduledo.activity.NewProjectActivity"
+            android:label="@string/title_activity_new_project"
+            android:parentActivityName="com.kelchm.scheduledo.activity.MainActivity"/>
+        <activity
+            android:name="com.kelchm.scheduledo.activity.EditorActivity"
+            android:label="@string/title_activity_editor"
+            android:parentActivityName="com.kelchm.scheduledo.activity.MainActivity"/>
+    </application>
+
+</manifest>

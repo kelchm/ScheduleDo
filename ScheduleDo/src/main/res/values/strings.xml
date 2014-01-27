@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2013 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<resources>
+    # Core Strings
+    <string name="app_name">ScheduleDo</string>
+
+    <string-array name="navigation_drawer_menu">
+        <item>Inbox</item>
+        <item>Schedule</item>
+    </string-array>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_addproject">Add a new Project</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_yesterday">Yesterday</string>
+    <string name="text_today">Today</string>
+    <string name="text_tomorrow">Tomorrow</string>
+    <string name="text_delete">Delete</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_save">Save</string>
+
+    # Font Awesome
+    <string name="icon_heart"></string>
+    <string name="icon_clock"></string>
+    <string name="icon_calendar"></string>
+    <string name="icon_folder_open">&#xf07c;</string>
+    <string name="title_activity_location_picker">LocationPickerActivity</string>
+    <string name="hello_world">Hello world!</string>
+
+    # Toast Messages
+    <string name="toast_saved">Changes Saved</string>
+    <string name="toast_discarded">Changes Discarded</string>
+    <string name="toast_calendar_event">This event cannot be edited</string>
+    <string name="toast_action_deleted">Action Deleted</string>
+    <string name="toast_project_deleted">Project Deleted</string>
+    <string name="toast_geolocation_enabled">Geolocation Enabled</string>
+    <string name="toast_geolocation_disabled">Geolocation Disabled</string>
+
+    # General
+    <string name="text_minutes">minutes</string>
+    <string name="text_hours">hours</string>
+
+    # Preferences
+    <string name="pref_geolocation_enabled">pref_geolocation_enabled</string>
+
+</resources>
