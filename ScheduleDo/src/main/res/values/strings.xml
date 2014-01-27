@@ -34,6 +34,29 @@
     <string name="text_cancel">Cancel</string>
     <string name="text_save">Save</string>
 
+    # Main
+    <string name="text_welcome_header">Welcome to ScheduleDo!</string>
+    <string name="text_welcome_description">You currently have no items in your inbox.</string>
+
+    # New Project
+    <string name="title_activity_new_project">Add Project</string>
+    <string name="action_create_project">Create</string>
+    <string name="hint_project_name">Project</string>
+
+    # Activity Editor
+    <string name="title_activity_editor">Edit</string>
+    <string name="title_activity_edit_project">Edit Project</string>
+    <string name="action_save_project">Save</string>
+    <string name="action_delete_project">Delete</string>
+    <string name="spinner_select_location">Select Location</string>
+
+    # Action Editor
+    <string name="edit_action">Edit Action</string>
+    <string name="new_action">New Action</string>
+    <string name="hint_action_name">Action Name</string>
+    <string name="hint_spinner_duration">Estimated Time</string>
+    <string name="hint_spinner_completion">Percent Completed</string>
+
     # Font Awesome
     <string name="icon_heart"></string>
     <string name="icon_clock"></string>

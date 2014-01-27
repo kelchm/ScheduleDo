@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                tools:context=".activity.MainActivity"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/list_header_vertical_margin"
+                android:paddingBottom="@dimen/list_header_vertical_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/ListItem.Title"
+        android:text="Large Text"
+        android:id="@+id/event_title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:singleLine="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/event_time"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/event_title"
+        android:layout_toRightOf="@+id/icon_clock"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false"
+        android:singleLine="true"
+        android:textColor="@color/subtext"/>
+
+    <com.kelchm.scheduledo.views.TextAwesome
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/event_title"
+        android:id="@+id/icon_clock"
+        android:layout_alignParentLeft="true"
+        android:text="@string/icon_clock"
+        android:paddingTop="2dp"
+        style="@style/ListItem.Icon.Small"/>
+
+    <com.kelchm.scheduledo.views.TextAwesome
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/event_title"
+        android:id="@+id/icon_project"
+        android:layout_toRightOf="@+id/event_time"
+        android:text="@string/icon_folder_open"
+        android:paddingTop="2dp"
+        android:paddingLeft="7dp"
+        style="@style/ListItem.Icon.Small"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Calendar"
+        android:id="@+id/parent_name"
+        android:layout_below="@+id/event_title"
+        android:layout_toRightOf="@+id/icon_project"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:textColor="@color/subtext"/>
+
+</RelativeLayout>

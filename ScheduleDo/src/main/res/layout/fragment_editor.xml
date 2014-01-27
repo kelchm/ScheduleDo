@@ -1,0 +1,130 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/parent_name"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:lines="1"
+            android:inputType="text"
+            android:hint="@string/hint_project_name"
+            android:paddingBottom="@dimen/field_bottom_padding"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/project_due_date"
+            android:lines="1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:hint="Project Due Date"
+            android:layout_below="@+id/parent_name"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingBottom="@dimen/field_bottom_padding"
+            android:inputType="datetime"/>
+
+        <com.kelchm.scheduledo.views.ButtonAwesome
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_calendar"
+            android:id="@+id/date_button"
+            android:layout_alignBottom="@+id/project_due_date"
+            android:layout_alignRight="@+id/parent_name"
+            android:layout_alignTop="@+id/project_due_date"/>
+
+        <com.kelchm.scheduledo.views.ButtonAwesome
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_clock"
+            android:id="@+id/time_button"
+            android:layout_alignTop="@+id/project_due_date"
+            android:layout_toLeftOf="@+id/date_button"
+            android:layout_alignBottom="@+id/project_due_date"/>
+
+        <Spinner
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:id="@+id/project_priority_spinner"
+            android:layout_below="@+id/project_due_date"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <com.kelchm.scheduledo.views.NoDefaultSpinner
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/project_location_spinner"
+            android:layout_below="@+id/project_due_date"
+            android:layout_toRightOf="@+id/project_priority_spinner"
+            android:layout_alignRight="@+id/project_due_date"
+            android:layout_alignEnd="@+id/project_due_date"
+            android:prompt="@string/spinner_select_location"
+            android:spinnerMode="dialog"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/project_priority_spinner"
+            android:layout_alignRight="@+id/project_location_spinner"
+            android:layout_alignEnd="@+id/project_location_spinner"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextView.Header"
+                android:text="Actions"
+                android:id="@+id/textView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Action"
+                android:id="@+id/new_action_button"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/textView"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/calendar_selected_date_text">
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/listview_actions"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

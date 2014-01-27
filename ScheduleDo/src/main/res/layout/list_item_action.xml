@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                tools:context=".activity.MainActivity"
+                android:paddingLeft="15dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingRight="15dp"
+                style="@style/ListItem.Title.Small">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:id="@+id/action_name"
+        android:singleLine="true"
+        android:layout_centerVertical="true"
+        />
+
+</RelativeLayout>
